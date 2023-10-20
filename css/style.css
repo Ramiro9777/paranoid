@@ -1,377 +1,269 @@
-@import url('https://fonts.googleapis.com/css2? family= Barlow & display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family= Barlow & display=swap");
+/* variable */
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Barlow', sans-serif;
-}
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif; }
 
-:root {
-    --baseA: #333;
-    --baseB: rgba(0, 34, 255, 0.53);
-}
+/* maps */
+/* ANIMACION */
+@keyframes moveTitle {
+  0% {
+    transform: translateX(-5vw); } }
 
+.moving-title, h1, h2, .logoSinFondo {
+  animation: moveTitle 1s linear; }
 
-
-
-/* COMIENZO DEL HEADER */
+/* Aplica la animación a un título específico */
+/* Aplica la animación a un subtítulo específico */
+/* DE ACA SALEN ESTILOS PARA QUIENES SOMOS */
 header {
-    width: 100%;
-}
-
-.logo {
-    height: 2rem;
-}
-
-
-/* FIN DEL HEADER */
-
+  width: 100%; }
+  header .logo {
+    height: 32px; }
 
 .videoIndex iframe {
-    width: 100%;
-    height: 31.25rem;
-}
+  width: 100%;
+  height: 31.25rem; }
 
 .slogan {
-    padding: 20px;
-    text-align: center;
-    color: white;
-    background-color: #000000;
-}
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: #000000; }
 
 .containerCard {
-    height: 80vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-
-}
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black; }
 
 .cardIndex {
-    display: flex;
-    flex-direction: column;
-
-
-    width: 20rem;
-    height: 90%;
-    background-color: silver;
-    padding: 1.875rem .9375rem .9375rem .9375rem;
-    font-size: 1.375rem;
-    font-family: 'Barlow', sans-serif;
-}
-
-.cardIndex div {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 90%;
+  background-color: silver;
+  padding: 1.875rem .9375rem .9375rem .9375rem;
+  font-size: 1.375rem;
+  font-family: 'Barlow', sans-serif; }
+  .cardIndex div {
     text-align: center;
-    padding: .9375rem;
-}
-
-.cardIndex div img {
-    width: 100%;
-}
-
-.cardIndex button {
+    padding: .9375rem; }
+    .cardIndex div img {
+      width: 100%; }
+  .cardIndex button {
     padding: 5px 15px;
     border-radius: 10px;
-    border: none;
-
-}
-
-.cardIndex button a {
-    color: #333;
-    text-decoration: none;
-    text-transform: capitalize;
-}
+    border: none; }
+    .cardIndex button a {
+      color: #333;
+      text-decoration: none;
+      text-transform: capitalize; }
 
 .letraParrafo {
-    background-color: black;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 900;
-    font-size: 0.9rem;
-    text-align: center;
-    color: silver;
-}
-
-.letraParrafo p {
-    padding: 1rem 1.25rem;
-}
+  background-color: black;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 0.9rem;
+  text-align: center;
+  color: silver; }
+  .letraParrafo p {
+    padding: 1rem 1.25rem; }
 
 .preesKit {
-    width: 100%;
-    height: 60vh;
-    background-image: url("../assets/imagenes/PRESTIK\ \(1\).jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: silver;
-}
-
-.preesKit h1 {
+  width: 100%;
+  height: 60vh;
+  background-image: url("../assets/imagenes/PRESTIK (1).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: silver; }
+  .preesKit h1 {
     padding-top: 2rem;
     font-size: xx-large;
-    font-family: 'Barlow', sans-serif;
-}
-
-.preesKit img {
-    width: 50%;
-}
+    font-family: 'Barlow', sans-serif; }
+  .preesKit img {
+    width: 50%; }
 
 .separador-img {
-    width: 100%;
-}
+  width: 100%; }
 
 .fotoSection3 {
-    background-size: cover;
-    background-position: center;
-
-    background-image: url("../assets/imagenes/entrega\ cabina\ patrick.jpg");
-}
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/imagenes/entrega cabina patrick.jpg"); }
 
 .section1Contacto {
-    color: red;
-}
+  color: red; }
 
 .formularioContacto {
-    background-color: black;
-    color: silver;
-    font-size: 1rem;
-}
+  background-color: black;
+  color: silver;
+  font-size: 1rem; }
 
-/* #4D2DB7  color traido de colorhunt*/
+.footer-styles, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-A);
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 25px; }
 
-/* SHOP */
-.tickets-container {
-    display: flex;
-    flex-flow: column;
-
-    justify-content: center;
-    align-items: center;
-
-    color: aliceblue;
-    text-shadow: #000000 0 0 20px;
-    font-weight: bolder;
-
-    background: url(../assets/imagenes/conoket2.png) center no-repeat fixed;
-    background-size: cover;
-    height: 100vh;
-
-}
-
-.tickets-options,
-.tickets-container h1,
-.tickets-container p {
-    background-color: #00000074;
-    border-radius: 30px;
-    text-align: center;
-    padding: 0 15px;
-}
-
-.tickets-container h1 {
-    font-size: 4rem;
-}
-
-.tickets-container p {
-    font-size: 2rem;
-    width: 80%;
-}
-
-.tickets-container .tickets-options {
-    display: flex;
-    gap: 30px;
-    font-size: x-large;
-}
-
-.tickets-options a {
-    color: aliceblue;
+.social-icons-styles, .social-icons {
+  display: flex;
+  gap: 1.5rem; }
+  .social-icons-styles a, .social-icons a {
     text-decoration: none;
-
-    border-bottom: aliceblue 2px solid;
-    margin: 5px;
-}
-
-.tickets-options a:hover {
-    color: yellow;
-    transition: 800ms;
-}
-
-#merchandasing {
-    text-align: center;
-    padding: 20px 0;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    /* Crea columnas de 18rem de ancho */
-    gap: 20px;
-    /* Espacio entre las tarjetas */
-
-    width: 80%;
-    margin-left: 10%;
-}
-
-/* FIN DE SHOP */
-
-/* EVENTOS */
-.video-eventos {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-top: 20px;
-}
-
-/* FIN DE EVENTOS */
-
-/* CONTACTO */
+    color: black;
+    font-size: 2rem;
+    transition: color 0.3s, transform 0.2s; }
+    .social-icons-styles a:hover, .social-icons a:hover {
+      color: var(--color-C);
+      transform: translateY(-3px); }
 
 .form-container {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-}
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; }
 
 .formularioContacto {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-}
-
-legend h2 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer; }
+  .formularioContacto:hover {
+    background-color: #0056b3; }
+  .formularioContacto legend h2 {
     font-size: 1.5rem;
-    font-weight: bold;
-}
-
-label {
+    font-weight: bold; }
+  .formularioContacto label {
     display: block;
     margin-top: 10px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="email"],
-textarea {
+    font-weight: bold; }
+  .formularioContacto input[type="text"],
+  .formularioContacto input[type="number"],
+  .formularioContacto input[type="email"],
+  .formularioContacto textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1rem;
-}
-
-input[type="text"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-color: #007bff;
-}
-
-button {
+    font-size: 1rem; }
+    .formularioContacto input[type="text"]:focus,
+    .formularioContacto input[type="number"]:focus,
+    .formularioContacto input[type="email"]:focus,
+    .formularioContacto textarea:focus {
+      border-color: #007bff; }
+  .formularioContacto button {
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     margin-top: 10px;
-    cursor: pointer;
-}
+    cursor: pointer; }
+    .formularioContacto button:hover {
+      background-color: #0056b3; }
 
-button:hover {
-    background-color: #0056b3;
-}
+.video-eventos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px; }
 
-/* FIN DE CONTACTO */
-
-/* ... FOOTER ... */
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--color-A);
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-
-    margin-top: 25px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 1.5rem;
-}
-
-footer .social-icons a {
-    text-decoration: none;
-    color: black;
+.tickets-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  text-shadow: #000000 0 0 20px;
+  font-weight: bolder;
+  background: url(../assets/imagenes/conoket2.png) center no-repeat fixed;
+  background-size: cover;
+  height: 100vh; }
+  .tickets-container h1 {
+    font-size: 4rem; }
+  .tickets-container p {
     font-size: 2rem;
-    transition: color 0.3s, transform 0.2s;
-}
+    width: 80%; }
+  .tickets-container .tickets-options,
+  .tickets-container h1,
+  .tickets-container p {
+    background-color: #00000074;
+    border-radius: 30px;
+    text-align: center;
+    padding: 0 15px; }
+  .tickets-container .tickets-options {
+    display: flex;
+    gap: 30px;
+    font-size: x-large; }
+    .tickets-container .tickets-options a {
+      color: aliceblue;
+      text-decoration: none;
+      border-bottom: aliceblue 2px solid;
+      margin: 5px; }
+      .tickets-container .tickets-options a:hover {
+        color: yellow;
+        transition: 800ms; }
 
-.social-icons a:hover {
-    color: var(--color-C);
-    transform: translateY(-3px);
-}
+#merchandasing {
+  text-align: center;
+  padding: 20px 0; }
 
-/* FIN DE FOOTER  */
-
-/* Media Queries */
-
-
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  /* Crea columnas de 18rem de ancho */
+  gap: 20px;
+  /* Espacio entre las tarjetas */
+  width: 80%;
+  margin-left: 10%; }
 
 @media screen and (max-width: 768px) {
-    .containerCard {
-        display: grid;
-        height: auto;
-        padding: 30px 0;
-    }
+  .containerCard {
+    display: grid;
+    height: auto;
+    padding: 30px 0; }
+  .tickets-container h1 {
+    font-size: xx-large; }
+  .tickets-container p {
+    font-size: 1rem;
+    width: 90%; }
+  .tickets-options {
+    gap: 0px; }
+  .tickets-options a {
+    font-size: small; }
+  .video-eventos iframe {
+    width: 90%; } }
 
-    /* SHOP */
-    .tickets-container h1 {
-        font-size: xx-large;
-    }
-
-    .tickets-container p {
-        font-size: 1rem;
-        width: 90%;
-    }
-
-    .tickets-options {
-        gap: 0px;
-    }
-
-    .tickets-options a {
-        font-size: small;
-    }
-
-    /* EVENTOS */
-    .video-eventos iframe {
-        width: 90%;
-    }
-}
-
-@media (min-width:769px) and (max-width: 1000px) {
-
-    /* SHOP */
-    .grid-container {
-        width: 70%;
-        margin-left: 15%;
-        row-gap: 20px;
-    }
-
-    /* EVENTOS */
-    .video-eventos iframe {
-        width: 90%;
-    }
-}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .grid-container {
+    width: 70%;
+    margin-left: 15%;
+    row-gap: 20px; }
+  .video-eventos iframe {
+    width: 90%; } }

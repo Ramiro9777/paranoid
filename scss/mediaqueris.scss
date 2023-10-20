@@ -1,0 +1,43 @@
+$breakpoint-small: 768px;
+$breakpoint-medium: 1000px;
+
+@media screen and (max-width: $breakpoint-small) {
+    .containerCard {
+        display: grid;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .tickets-container h1 {
+        font-size: xx-large;
+    }
+
+    .tickets-container p {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .tickets-options {
+        gap: 0px;
+    }
+
+    .tickets-options a {
+        font-size: small;
+    }
+
+    .video-eventos iframe {
+        width: 90%;
+    }
+}
+
+@media (min-width:$breakpoint-small)  and (max-width: $breakpoint-medium) {
+    .grid-container {
+        width: 70%;
+        margin-left: 15%;
+        row-gap: 20px;
+    }
+
+    .video-eventos iframe {
+        width: 90%;
+    }
+}

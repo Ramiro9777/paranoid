@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2? family= Barlow & display=swap');
+
+$fuentePrincipal: 'Barlow', sans-serif;
+/* variable */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: $fuentePrincipal;
+}
+
+
+
+/* maps */
+$colors: (
+    primary: #007bff,
+    secondary: #6c757d,
+    success: #28a745,
+    danger: #dc3545
+);
+$primaryColor: map-get($colors, primary);
+
+/* ANIMACION */
+@keyframes moveTitle {
+    0% {
+        transform: translateX(-5vw);
+    }
+
+}
+
+.moving-title {
+    animation: moveTitle 1s linear;
+}
+
+/* Aplica la animación a un título específico */
+h1 {
+    @extend .moving-title;
+}
+
+/* Aplica la animación a un subtítulo específico */
+h2 {
+    @extend .moving-title;
+}
+.logoSinFondo{
+    @extend .moving-title;
+}
